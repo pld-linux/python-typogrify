@@ -1,13 +1,14 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-typogrify.spec)
 
 Summary:	Filters to enhance web typography, including support for Django & Jinja templates
 Summary(pl.UTF-8):	Filtry rozszerzające typografię WWW z obsługą szablonów Django i Jinja
 Name:		python-typogrify
+# keep 2.0.x here for python2 support
 Version:	2.0.7
-Release:	7
+Release:	8
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/typogrify/
